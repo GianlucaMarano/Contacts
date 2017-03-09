@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/item_recycler_img"
+    android:src="@drawable/placeholder"
+    android:layout_margin="@dimen/default_item_margin"    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_recycler_name"
+        android:layout_toRightOf="@id/item_recycler_img"
+        android:layout_alignTop="@id/item_recycler_img"
+        android:text="Giovanni Muchacha"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/default_item_name_size"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_recycler_phone"
+        android:text="+39335123456"
+        android:layout_below="@id/item_recycler_name"
+        android:layout_toRightOf="@id/item_recycler_img"/>
+
+
+</RelativeLayout>
